@@ -9,6 +9,9 @@ colorscheme molokai
 " Set font
 set guifont=Inconsolata\ Regular:h18
 
+" Auto indent
+set ai
+
 " Set backspace behaviour
 set bs=2
 
