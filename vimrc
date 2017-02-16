@@ -1,9 +1,12 @@
 " Don't try to be vi compatible
 set nocompatible
 
+" pathogen.vim
+execute pathogen#infect()
+
 " Syntax highlighting
-filetype on
 syntax on
+filetype plugin indent on
 colorscheme molokai
 
 " Set font
@@ -13,7 +16,7 @@ set guifont=Inconsolata\ Regular:h18
 set ai
 
 " Set backspace behaviour
-set bs=2
+set backspace=indent,eol,start
 
 " Add line numbers
 set number
