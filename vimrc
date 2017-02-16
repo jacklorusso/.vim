@@ -12,9 +12,6 @@ colorscheme Tomorrow-Night
 " Stop annoying me
 set visualbell
 
-" Set font
-set guifont=Inconsolata\ Regular:h18
-
 " Auto indent
 set ai
 
@@ -38,3 +35,6 @@ let mapleader=","
 
 map <leader>s :source ~/.vimrc<CR>
 map <leader>\ :NERDTreeToggle<CR>
+
+set laststatus=2
+let g:airline_powerline_fonts = 1
