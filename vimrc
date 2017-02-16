@@ -9,6 +9,10 @@ syntax on
 filetype plugin indent on
 colorscheme Tomorrow-Night
 
+" Airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
 " Stop annoying me
 set visualbell
 
@@ -35,6 +39,3 @@ let mapleader=","
 
 map <leader>s :source ~/.vimrc<CR>
 map <leader>\ :NERDTreeToggle<CR>
-
-set laststatus=2
-let g:airline_powerline_fonts = 1
