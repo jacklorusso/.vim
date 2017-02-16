@@ -7,7 +7,10 @@ execute pathogen#infect()
 " Syntax highlighting
 syntax on
 filetype plugin indent on
-colorscheme molokai
+colorscheme Tomorrow-Night
+
+" Stop annoying me
+set visualbell
 
 " Set font
 set guifont=Inconsolata\ Regular:h18
@@ -34,3 +37,4 @@ set showmatch
 let mapleader=","
 
 map <leader>s :source ~/.vimrc<CR>
+map <leader>\ :NERDTreeToggle<CR>
