@@ -11,6 +11,9 @@ colorscheme Tomorrow-Night
 set encoding=utf-8
 scriptencoding utf-8
 
+" Allow JSX highlighting in .js files
+let g:jsx_ext_required = 0
+
 " Lightline config
 let g:lightline = {
       \ 'colorscheme': 'Tomorrow_Night',
@@ -40,11 +43,11 @@ function! LightlineFugitive()
   return ''
 endfunction
 
-let g:NERDTreeDirArrowExpandable = '▷'
-let g:NERDTreeDirArrowCollapsible = '▽'
-
 set laststatus=2
- 
+
+" change NERDTree arrows
+let g:NERDTreeDirArrowExpandable = '▷'
+let g:NERDTreeDirArrowCollapsible = '▽' 
 
 " Stop annoying me
 set visualbell
