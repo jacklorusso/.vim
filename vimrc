@@ -68,7 +68,7 @@ set showcmd
 set showmatch
 
 " Set Leader key
-let mapleader=","
+let mapleader="\<space>"
 
 map <leader>s :source ~/.vimrc<CR>
 map <leader>\ :NERDTreeToggle<CR>
