@@ -52,8 +52,13 @@ let g:NERDTreeDirArrowCollapsible = '▽'
 " Stop annoying me
 set visualbell
 
-" Auto indent
+" Autoindent
 set ai
+
+" Use spaces for indentation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 " Set backspace behaviour
 set backspace=indent,eol,start
@@ -70,13 +75,14 @@ set showcmd
 " Show matching brackets
 set showmatch
 
+" Disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " Set Leader key
 let mapleader="\<space>"
 
 map <leader>s :source ~/.vimrc<CR>
 map <leader>\ :NERDTreeToggle<CR>
-
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
