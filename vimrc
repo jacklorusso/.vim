@@ -75,11 +75,13 @@ set showcmd
 " Show matching brackets
 set showmatch
 
-" Disable arrow keys
+" Disable Up/Down arrow keys
 noremap <Up> <NOP>
 noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+
+" Remap Left/Right arrow keys to change buffers
+nnoremap <Left> :bprev<CR>
+nnoremap <Right> :bnext<CR>
 
 " Set Leader key
 let mapleader="\<space>"
