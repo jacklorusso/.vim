@@ -5,9 +5,13 @@ set nocompatible
 execute pathogen#infect()
 
 " Syntax highlighting
-syntax on
+syntax enable
 filetype plugin indent on
-colorscheme Tomorrow-Night
+
+" Solarized dark
+set background=dark
+colorscheme solarized
+
 set encoding=utf-8
 scriptencoding utf-8
 
@@ -16,7 +20,7 @@ let g:jsx_ext_required = 0
 
 " Lightline config
 let g:lightline = {
-      \ 'colorscheme': 'Tomorrow_Night',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
