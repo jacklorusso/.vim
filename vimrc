@@ -8,10 +8,6 @@ execute pathogen#infect()
 syntax enable
 filetype plugin indent on
 
-" Solarized dark
-set background=dark
-colorscheme solarized
-
 set encoding=utf-8
 scriptencoding utf-8
 
@@ -20,7 +16,7 @@ let g:jsx_ext_required = 0
 
 " Lightline config
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'Dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
@@ -93,6 +89,6 @@ let mapleader="\<space>"
 map <leader>s :source ~/.vimrc<CR>
 map <leader>\ :NERDTreeToggle<CR>
 " check off a todo item and time stamp it
-map tk ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+map tk ^rx: <Esc>:r! date +" [\%H:\%M \%d/\%m]"<ENTER>kJA<Esc>$
 " create a new todo item
 map td o  _
