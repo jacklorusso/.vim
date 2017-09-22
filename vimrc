@@ -92,3 +92,7 @@ let mapleader="\<space>"
 
 map <leader>s :source ~/.vimrc<CR>
 map <leader>\ :NERDTreeToggle<CR>
+" check off a todo item and time stamp it
+map tk ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+" create a new todo item
+map td o  _
