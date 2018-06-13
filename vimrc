@@ -16,7 +16,7 @@ let g:jsx_ext_required = 0
 
 " Lightline config
 let g:lightline = {
-      \ 'colorscheme': 'powerline',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
@@ -88,7 +88,4 @@ let mapleader="\<space>"
 
 map <leader>s :source ~/.vimrc<CR>
 map <leader>\ :NERDTreeToggle<CR>
-" check off a todo item and time stamp it
-map tk ^rx: <Esc>:r! date +" [\%H:\%M \%d/\%m]"<ENTER>kJA<Esc>$
-" create a new todo item
-map td o  _
+
