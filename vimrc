@@ -16,7 +16,6 @@ let g:jsx_ext_required = 0
 
 " Lightline config
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
